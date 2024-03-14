@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
     
-	<title>Vital LSC</title>
+	<title>LSC</title>
 	<link rel="icon" href="images/favicon.png" type="image">
 	
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> 
@@ -49,11 +49,6 @@
             </ul>
               <div class="credits">
                   <p>Credits: Synergy#1234</p>
-                  <p>Credits: Speedracer#2020</p> 
-		  <p>Credits: FullPotato#2962</p>
-		  <p>Credits: Zothian#2935</p>		    
-                  <p>Base Script Credits: Stax#0276</p>
-                  <p>Base Script Credits: CaS#6976</p>
               </div>
                 
         </nav>
