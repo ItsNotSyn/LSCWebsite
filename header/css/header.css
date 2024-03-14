@@ -16,21 +16,23 @@ body{
 		100%{background-position:0% 50%}
 	}
 
-.wrapper{
-/*    display: block;*/
-    display: flex;
-    height: 100%; 
-	width: 100%;
-    opacity: 0.2;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-	z-index: 5;
-	position: fixed;
-	top: 0%;
-	left: 0%;
-    align-items: stretch;
-}
+    .wrapper{
+        background-image: url("../images/BG.png");
+        background-color: #1A1A2A;
+        background-blend-mode:luminosity;
+    /*    display: block;*/
+        display: flex;
+        height: 100%; 
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        align-items: stretch;
+    }
 
 .imgC{
     display: block;
