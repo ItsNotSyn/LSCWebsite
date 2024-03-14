@@ -19,6 +19,16 @@
 	<!--  -->
 
 	<style>
+        .footer {
+            background-image: url(/images/Elogo.png);
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            text-align: center;
+            }
 
 	</style>
 
@@ -26,45 +36,45 @@
 
 <body>
     <div class="wrapper">
-    <!---- Sidebar  ---->
-    <nav id="sidebar" >
-        <div class="sidebar-header">
-            <img src="images/logo.png" style="width: 165px; height: 165px;" alt=""  class="fa-align-center">
-        </div>
-            <ul class="list-unstyled components">
-                <li>
-                    <button class="sidebar-button">
-                        <a href="index.html">Home Page</a>
-                    </button>
-                </li>
-                <li>
-                    <button class="sidebar-button">
-                        <a href="templates.html">Email Template</a>
-                    </button>
-                </li>
-                <li>
-                    <button class="sidebar-button">
-                        <a href="monthtemplate.html">Monthly Review</a>
-                    </button>
-                </li>                  
-                <li>
-                    <button class="sidebar-button">
-                        <a href="signature.html">Email Signature</a>
-                    </button>
-                </li>                                    
-                <li>
-                    <button class="sidebar-active-button, sidebar-button">
-                        <a href="header.html">Forum Header</a>
-                    </button>
-                </li>
-                <li>
-                    <button class="sidebar-button">
-                        <a href="title.html">Forum Title</a>
-                    </button>
-                </li>                 
-            </ul>
+        <!---- Sidebar  ---->
+        <nav id="sidebar" >
+            <div class="sidebar-header">
+                <img src="images/logo.png" style="width: 165px; height: 165px;" alt=""  class="fa-align-center">
+            </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <button class="sidebar-button">
+                            <a href="index.html">Home Page</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sidebar-button">
+                            <a href="templates.html">Email Template</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sidebar-button">
+                            <a href="monthtemplate.html">Monthly Review</a>
+                        </button>
+                    </li>                  
+                    <li>
+                        <button class="sidebar-button">
+                            <a href="signature.html">Email Signature</a>
+                        </button>
+                    </li>                                    
+                    <li class="active">
+                        <button class="sidebar-active-button">
+                            <a href="header.html">Forum Header</a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sidebar-button">
+                            <a href="title.html">Forum Title</a>
+                        </button>
+                    </li>                 
+                </ul>
         </nav>
-    <!---- Page Content  ---->
+     <!---- Page Content  ---->
         <div id="content">
            <div class="row">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -96,7 +106,7 @@
                     </div>
                  </div>
             </div>
-        </div>
+        </div>         
     </div>
  
 	
@@ -145,7 +155,7 @@
             canvas.width = 1920;
             canvas.crossOrigin = "Anonymous";
             canvas.height = 500;
-//            ctx.clearRect(0,0,canvas.width,canvas.height);
+          //ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.font = "75px BTBrikRegular";
             ctx.textAlign = "center";
             ctx.drawImage(img, 0, 0);
@@ -173,6 +183,7 @@
             }
         });
     </script>
+
 </body>
 
 </html>
