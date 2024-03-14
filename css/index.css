@@ -1,43 +1,34 @@
 body{
-    background: linear-gradient(270deg, #1A1A2A, #1B1A31, #1A1A2A);
+/*    background: linear-gradient(270deg, #1A1A2A, #1B1A31, #1A1A2A);*/
     background-size: 600% 600%;
-    display: flex;
-    height: 100%;
     color: white;
-/*    overflow-y: hidden;*/
-/*     font-family: inherit;*/
-/*    margin: 1px;*/
-/*    padding-bottom: 20px;*/
-    position: relative;
-    animation: gradientslide 15s ease infinite;*/
+    margin: 1px;
+/*    position: ;*/
 }
-.wrapper{
-    background-image: url("../images/BG.png");
-    background-color: #1A1A2A;
-    background-blend-mode:luminosity;
-/*    display: block;*/
-    display: flex;
-    height: auto; 
-	width: 100%;
 
-        
-    /*background-position: center;*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-	/*z-index: 5;*/
-	/*position: relative;*/
-	/*top: 0%;*/
-	/*left: 0%;*/
-    
-/*    align-items: stretch;*/
-}
 @keyframes gradientslide { 
 		0%{background-position:0% 50%}
 		50%{background-position:100% 50%}
 		100%{background-position:0% 50%}
 	}
 
+.wrapper{
+    background-image: url("../images/BG.png");
+    background-color: #1A1A2A;
+    background-blend-mode:luminosity;
+/*    display: block;*/
+    display: flex;
+    height: 100%; 
+	width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	z-index: 5;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+    align-items: stretch;
+}
 
 
 .imgC{
@@ -54,6 +45,7 @@ body{
     background : black;
     border-color: black;
 }
+
 
 a,
 a:hover,
@@ -80,20 +72,18 @@ a:focus {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 32px; 
+  position:relative;
   background-color: transparent;
   color: white;
   text-align: center;
+
 }
 
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+
 
 #sidebar {
     min-width: 250px;
@@ -134,7 +124,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #1B1A31;
-    background: #ada6ce;
+    background: #fff;
 }
 
 #sidebar ul li.active>a,
@@ -199,42 +189,19 @@ a.article:hover {
     padding-inline-start: 20px;
 
 }
-#sidebar .sidebar-active-button{
-    background-color: #797492
+.sidebar-active-button{
+    background-color: #4d4479
 
 }
-
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
-.content {
+#content {
     width: 100%;
-/*    overflow-y: hidden;*/
-/*    padding: 20px;*/
+    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  text-align: center;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  height: 225px;
-  width: 400px;
 }
 
 /* ---------------------------------------------------
@@ -256,63 +223,32 @@ a.article:hover {
 .credits{
     text-align: Left;
     margin: 20% 20px 0;
-/*    padding: 12px;*/
+    text-align: center;
     font-family: 'Yellowtail', cursive;
     font-size: 1.05em;
 }
 
-.carousel{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.carousel img{
-    margin-bottom: -5%;
-}
-.navUl{
-    list-style-type: none;    
-    display: flex;
-    margin: 0;
-    float: left;
-}
-.navUl li{
-    float: left;
-}
-.navUl h3{
-    padding: 0 15px;
-    margin-top: 12px;
-}
-body, html{
-    background: linear-gradient(270deg, #261F5F, #D0CFDC, #8C8CAC);
-    background-size: 600% 600%;
-    color: #fff;
-/*    animation: gradientslide 5s ease infinite;*/
-    height: 100%;
+.canv{
+/*    text-align: center;*/
+    display: inline-block;
+    height: 250px;
+/*    margin: 0 auto;*/
+    width: 1050px;
+    position: fixed;
 }
 
-@keyframes gradientslide { 
-		0%{background-position:100% 50%}
-		50%{background-position:100% 50%}
-		100%{background-position:100% 50%}
-	}
-
-
-#image-wrap{
-
+.canv canvas{
+    z-index: 20;
+    position: fixed;
 }
-#image-wrap img{
-  width: 100%;
-  height: 100%;
-}
-#image-wrap canvas{
-  
-}
-
-
 .entry{
+/*    float: lef;*/
+    width: 1050px;
     margin-top: 40px;
+    text-align: left;
 }
 .entry label{
-    color: crimson;
+    color: white;
     font-size: 1.7em;
 }
 .entry input{
@@ -324,11 +260,44 @@ body, html{
     font-size: 1.9em;
     text-align: center;
 }
-.canv{
-  position: fixed;
-  width: 920px;
-  height: 240px;
+.navUl{
+    list-style-type: none;    
+    display: flex;
+    margin: 0 -20px;
+    float: left;
+}
+.navUl li{
+    float: left;
+}
+.navUl h3{
+    padding: 0 15px;
+    margin-top: 12px;
+}
+.bCenter{
+    margin-top: 20%;
+    width: 100%;
 }
 
-
-
+.bCenter button{
+    margin-bottom: 10px;
+/*    height: 100%;
+    width: 100%;
+    background-color: inherit;
+*/
+}
+.bCenter2{
+    background-color: transparent;
+}
+.bCenter2 button{
+    width: 100%;
+/*    background-color: black;*/
+}
+.dropdown-menu{
+    border: 0;
+}
+.mnu2{
+    padding-left: 3%;
+}
+.btn-dark:hover{
+    color: darkgray;
+}
