@@ -13,7 +13,7 @@ body{
 	}
 
 .wrapper{
-    background-image: url("../images/bg.png");
+    background-image: url("../images/BG.png");
     background-color: #1A1A2A;
     background-blend-mode:luminosity;
 /*    display: block;*/
