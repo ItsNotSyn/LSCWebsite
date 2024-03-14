@@ -130,8 +130,12 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #1B1A31;
-    background: #fff;
+    color: #fff;
+    background: #6d6cb9;
+    text-align: center;
+    border-radius: 12px;
+    padding-inline-start: 20px;
+
 }
 
 #sidebar ul li.active>a,
@@ -197,7 +201,17 @@ a.article:hover {
 
 }
 .sidebar-active-button{
-    background-color: #4d4479
+    background-color: #4d4479;
+    transition: 0.53s;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 12px;
+    width: 210px;  
+    padding-inline-start: 20px;
 
 }
 /* ---------------------------------------------------
