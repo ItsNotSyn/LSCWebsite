@@ -90,7 +90,7 @@
                 <div class="container">
                   <div class="container-fluid">
                         <canvas id="canvas" class="canv"> </canvas>
-                        <img  id="canvasImg" style="width: 1475px; height: 300px;" src="images/lsc_banner_template.png"  alt="" >
+                        <img  id="canvasImg" style="width: 1480px; height: 337px;" src="images/lsc_banner_template.png"  alt="" >
                         <br><br>
                         <br><br>
                         <br><br>
@@ -99,7 +99,7 @@
                                 Name:
                             </div>
                             <div class="col-md-10">
-                                <input class="form-control" type="text" id="inp" style="width: 600px; font-size: 18px; text-align: left;" placeholder="John Doe" >
+                                <input class="form-control" type="text" id="inp" style="width: 600px; font-size: 18px; text-align: left;" placeholder="John Doe">
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -115,7 +115,7 @@
                                 Divisions:
                             </div>
                             <div class="col-md-10">
-                                <input class="form-control" type="text" id="inp3" style="width: 600px; font-size: 18px"  placeholder="Roadside">
+                                <input class="form-control" type="text" id="inp3" style="width: 600px; font-size: 18px"  placeholder="Roadside" >
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -174,9 +174,9 @@
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             var img = document.getElementById('canvasImg');
-            canvas.width = 1475;
+            canvas.width = 1480;
             canvas.crossOrigin = "Anonymous";
-            canvas.height = 300;
+            canvas.height = 337;
 //            ctx.clearRect(0,0,canvas.width,canvas.height);
             ctx.font = "52px BTBrikRegular";
             ctx.textAlign = "center";
@@ -204,9 +204,9 @@
             var canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
             image.onload = function(){
-                canvas.width = 1920;
+                canvas.width = 1480;
                 canvas.crossOrigin = "Anonymous";
-                canvas.height = 500;
+                canvas.height = 337;
                 ctx.drawImage(image, 0, 0);
                 drawText();
             }
