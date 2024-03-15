@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="js/jquery.js">
-    <link rel="stylesheet" media="screen" href="css/font.css" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="css/font1.css" type="text/css"/>
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -26,6 +26,26 @@
             range.selectNode(codeElement);
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
+        }
+
+        
+        function copyText() {
+            // Select the text to copy
+            var textToCopy = document.getElementById('code');
+            var selection = window.getSelection();
+            var range = document.createRange();
+            range.selectNodeContents(textToCopy);
+            selection.removeAllRanges();
+            selection.addRange(range);
+
+            // Copy the selected text to clipboard
+            document.execCommand('copy');
+
+            // Deselect the text
+            selection.removeAllRanges();
+
+            // Optionally, notify the user that the text has been copied
+            alert('Text has been copied to clipboard!');
         }
     </script>
 
@@ -98,10 +118,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <label for="usr">Standard Email Template</label>
-                        <img src="images/StandardEmail.png" id="usr"></div>
+                        <label for="usr">Monthly Review Template</label>
+                        <img src="images/StandardEmail.PNG" id="usr"></div>
                     <div class="col-md-4">
-                        <label for="usr"> Code - <a href="#" onclick="selectCode(); return false;">Select all</a></label>  
+                        <label for="usr"> Code - <a href="#" onclick="selectCode(); return false;">Select all</a> - <a href="#" onclick="copyText(); return false;">Copy to Clipboard</a></label>  
                         <pre  style="width: 635px; height: 415px;">
 <code id="code">
 [divbox=#efefef][img]https://i.imgur.com/utihwAO.png[/img]
